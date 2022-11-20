@@ -1,0 +1,28 @@
+<template>
+    <lightning-card  title="Hello">
+       
+    
+    <lightning-combobox
+            name="Stadard Event Fire"
+            label="Status"
+            value={value}
+            placeholder="Select Progress"
+            options={options}
+            onchange={handleChangeStandard} ></lightning-combobox>
+
+    <p>Selected value is: {valueStandard}</p>
+    
+
+
+    <lightning-combobox
+            name="Delayed Event Fire"
+            label="Status"
+            value={value}
+            placeholder="Select Progress"
+            options={options}
+            onchange={handleChangeDelayed} ></lightning-combobox>
+
+    <p>Selected value is: {valueDelayed}</p>
+
+</lightning-card>
+</template>

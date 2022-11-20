@@ -1,0 +1,15 @@
+<aura:component implements="force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,forceCommunity:availableForAllPageTypes,force:lightningQuickAction" access="global" >
+	  <aura:handler name="init" value="{!this}" action="{!c.doInit}" />
+    <lightning:notificationsLibrary aura:id="notifLib"/>
+    <aura:attribute name="greeting" type="String" default="Worldddd"/>
+        
+    <div class="slds-card">
+        <div class="slds-card__body slds-card__body_inner slds-p-top_medium">
+            Hello, {!v.greeting}
+            <lightning:input aura:id="myInput" type="text" value="{!v.greeting}"/>
+        <button name="Show Toast" type="submit" onclick="{!c.showToast}">Show Toast</button>
+<button name="Show Notification" type="submit" onclick="{!c.showNotif}">Show Notification</button>
+
+        </div>
+    </div>
+</aura:component>
